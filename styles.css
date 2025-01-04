@@ -15,6 +15,23 @@
 	display : flex;
 	justify-content : center;
 	align-items : center;
-	border : 2px solid blue;
+	border : 2px solid grey;
 	border-radius : 50%
+}
+.buttons{
+	display : flex;
+	justify-content : center;
+	align-items : center;
+}
+#prev , #next{
+	background-color : blue;
+	color : white;
+	height : 25px;
+	width : 100px;
+	margin : 10px;
+	padding : 20px;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+	border-radius : 10px;
 }

@@ -1,15 +1,20 @@
 /*  your css code here. If applicable */
-.progress-bar{
+.main{
+	color: grey;
+	text-align : center;
+	height : 20vh;
 	display : flex;
-	justify-content : space-between;
-	width : 80%;
-	margin : auto;
+	justify-content : center;
+	align-items : center;
 }
 .circle{
-	height : 25px;
-	width : 25px;
+	height :40px;
+	width : 40px;
+	padding : 5px;
+	margin : 40px;
 	display : flex;
-	justify-items: center;
-	border : 1px solid black;
+	justify-content : center;
+	align-items : center;
+	border : 2px solid blue;
 	border-radius : 50%
 }

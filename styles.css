@@ -18,10 +18,16 @@
 	border : 2px solid grey;
 	border-radius : 50%
 }
+.circle.active{
+	background-color: blue;
+}
 .buttons{
 	display : flex;
 	justify-content : center;
 	align-items : center;
+}
+button : disabled{
+	background-color : grey;
 }
 #prev , #next{
 	background-color : blue;
@@ -35,3 +41,4 @@
 	justify-content : center;
 	border-radius : 10px;
 }
+

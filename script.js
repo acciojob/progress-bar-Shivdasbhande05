@@ -30,6 +30,6 @@ function userInterface() {
 			circle.classList.remove('active');
 		}
 	});
-	prevButton.disabled = activeCircle ===0;
-	nextButton.disabled = activeCircle === circles.length-;
+	prevButton.disabled = activeCircle === 0;
+	nextButton.disabled = activeCircle === circles.length-1;
 }

@@ -1,9 +1,9 @@
 //your JS code here. If required.
-const circles = Arrayfrom(document.querySelectorAll(".circle"));
+const circles = Array.from(document.querySelectorAll(".circle"));
 const nextButton = document.getElementById("next");
 const prevButton = document.getElementById("prev");
 
-let activeCircle = 1;
+let activeCircle = 0;
 userInterface();
 
 nextButton.addEventListener('click',() => {

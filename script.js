@@ -3,22 +3,22 @@ const circles = Arrayfrom(document.querySelectorAll(".circle"));
 const nextButton = document.getElementById("next");
 const prevButton = document.getElementById("prev");
 
-let activeCircle = 0;
+let activeCircle = 1;
 userInterface();
 
 nextButton.addEventListener('click',() => {
 	activeCircle++;
-	// if(activeCircle > circles.length){
-	// 	activeCircle = circles.length;
-	// }
+	 if(activeCircle > circles.length){
+	 	activeCircle = circles.length;
+	 }
 	userInterface();
 });
 
 prevButton.addEventListener('click', () =>{
 	activeCircle--;
-	// if(activeCircle < 1){
-	// 	activeCircle = 1;
-	// }
+	 if(activeCircle < 1){
+	 	activeCircle = 1;
+	 }
 	userInterface();
 });
 
@@ -31,5 +31,5 @@ function userInterface() {
 		}
 	});
 	prevButton.disabled = activeCircle === 0;
-	nextButton.disabled = activeCircle === circles.length-1;
+	nextButton.disabled = activeCircle === circles.length;
 }

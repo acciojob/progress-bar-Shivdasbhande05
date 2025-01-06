@@ -16,7 +16,7 @@ nextButton.addEventListener('click',() => {
 
 prevButton.addEventListener('click', () =>{
 	activeCircle--;
-	 if(activeCircle < 1){
+	 if(activeCircle <= 1){
 	 	activeCircle = 1;
 	 }
 	userInterface();
@@ -31,5 +31,5 @@ function userInterface() {
 		}
 	});
 	prevButton.disabled = activeCircle === 0;
-	nextButton.disabled = activeCircle === circles.length;
+	nextButton.disabled = activeCircle === circles.length-1;
 }
